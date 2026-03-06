@@ -24,3 +24,16 @@ async def fetch_weather_async(client, city):
     local_time = data["current_weather"]["time"].replace("T", " ")
     
     print(f"[Async] {city['name']:<10} อุณหภูมิ: {temp}°C (เวลา: {local_time}) | ดึงเสร็จใน: {fetch_time:.4f} วินาที")
+
+async def main():
+    print("เริ่มดึงข้อมูลด้วย Asyncio...")
+    start_time = time.time()
+    
+    async with httpx.AsyncClient() as client:
+        tasks = [fetch_weather_async(client, city) for city in CITIES]
+        await asyncio.gather(*tasks)
+        
+    print(f"ใช้เวลาทั้งหมด: {time.time() - start_time:.4f} วินาที")
+
+if __name__ == "__main__":
+    asyncio.run(main())
