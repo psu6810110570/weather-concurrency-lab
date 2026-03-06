@@ -1,3 +1,20 @@
+# Python cache
 __pycache__/
 *.pyc
+
+# Environments
 .env
+.venv
+env/
+venv/
+
+# Formatting/System files
+.vscode/
+.idea/
+.DS_Store
+
+# Images and Media (ตามโจทย์อาจารย์)
+images/
+*.png
+*.jpg
+*.jpeg
