@@ -24,78 +24,94 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากการรันโปรแกรมเพื่อเปรียบเทียบการทำงานทั้ง 4 รูปแบบ ได้ผลลัพธ์ความเร็วที่แตกต่างกันอย่างชัดเจนดังนี้:
 
 <div align="center">
-  <h3>ผลการทดลองเปรียบเทียบการทำงาน</h3>
-  <br>
-  
-  <div style="margin-bottom: 50px;">
-    <p style="color: #888;">------------------------- <b>Sequential (แบบปกติ)</b> -------------------------</p>
-    <div style="margin-bottom: 25px;">
-      <img src="images/sequential1.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 1 ทดสอบ Sequential รอบ 1</b></sub>
+  <h2>📊 ผลการทดลองเปรียบเทียบการทำงาน</h2>
+</div>
+
+<br>
+
+<div align="center" style="font-family: sans-serif;">
+
+  <div style="margin-top: 20px; margin-bottom: 60px;">
+    <h3 style="border-bottom: 2px solid #777; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+      &nbsp;&nbsp; Sequential (แบบปกติ) &nbsp;&nbsp;
+    </h3>
+    <div style="margin-bottom: 40px;">
+      <img src="images/sequential1.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 1</b> ทดสอบ Sequential รอบ 1</span>
     </div>
-    <div style="margin-bottom: 25px;">
-      <img src="images/sequential2.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 2 ทดสอบ Sequential รอบ 2</b></sub>
+    <div style="margin-bottom: 40px;">
+      <img src="images/sequential2.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 2</b> ทดสอบ Sequential รอบ 2</span>
     </div>
-    <div>
-      <img src="images/sequential3.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 3 ทดสอบ Sequential รอบ 3</b></sub>
+    <div style="margin-bottom: 20px;">
+      <img src="images/sequential3.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 3</b> ทดสอบ Sequential รอบ 3</span>
     </div>
   </div>
 
-  <div style="margin-bottom: 50px;">
-    <p style="color: #888;">------------------------- <b>Threading</b> -------------------------</p>
-    <div style="margin-bottom: 25px;">
-      <img src="images/thread1.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 4 ทดสอบ Threading รอบ 1</b></sub>
+  <div style="margin-top: 100px; margin-bottom: 60px;">
+    <h3 style="border-bottom: 2px solid #777; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+      &nbsp;&nbsp; Threading &nbsp;&nbsp;
+    </h3>
+    <div style="margin-bottom: 40px;">
+      <img src="images/thread1.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 4</b> ทดสอบ Threading รอบ 1</span>
     </div>
-    <div style="margin-bottom: 25px;">
-      <img src="images/thread2.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 5 ทดสอบ Threading รอบ 2</b></sub>
+    <div style="margin-bottom: 40px;">
+      <img src="images/thread2.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 5</b> ทดสอบ Threading รอบ 2</span>
     </div>
-    <div>
-      <img src="images/thread3.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 6 ทดสอบ Threading รอบ 3</b></sub>
-    </div>
-  </div>
-
-  <div style="margin-bottom: 50px;">
-    <p style="color: #888;">------------------------- <b>Asyncio</b> -------------------------</p>
-    <div style="margin-bottom: 25px;">
-      <img src="images/asyncio1.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 7 ทดสอบ Asyncio รอบ 1</b></sub>
-    </div>
-    <div style="margin-bottom: 25px;">
-      <img src="images/asyncio2.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 8 ทดสอบ Asyncio รอบ 2</b></sub>
-    </div>
-    <div>
-      <img src="images/asyncio3.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 9 ทดสอบ Asyncio รอบ 3</b></sub>
+    <div style="margin-bottom: 20px;">
+      <img src="images/thread3.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 6</b> ทดสอบ Threading รอบ 3</span>
     </div>
   </div>
 
-  <div style="margin-bottom: 30px;">
-    <p style="color: #888;">------------------------- <b>Process Pool</b> -------------------------</p>
-    <div style="margin-bottom: 25px;">
-      <img src="images/process1.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 10 ทดสอบ Process Pool รอบ 1</b></sub>
+  <div style="margin-top: 100px; margin-bottom: 60px;">
+    <h3 style="border-bottom: 2px solid #777; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+      &nbsp;&nbsp; Asyncio &nbsp;&nbsp;
+    </h3>
+    <div style="margin-bottom: 40px;">
+      <img src="images/asyncio1.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 7</b> ทดสอบ Asyncio รอบ 1</span>
     </div>
-    <div style="margin-bottom: 25px;">
-      <img src="images/process2.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 11 ทดสอบ Process Pool รอบ 2</b></sub>
+    <div style="margin-bottom: 40px;">
+      <img src="images/asyncio2.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 8</b> ทดสอบ Asyncio รอบ 2</span>
     </div>
-    <div>
-      <img src="images/process3.png" width="600" style="border-radius: 8px; border: 1px solid #ddd; box-shadow: 0px 4px 8px rgba(0,0,0,0.2);"><br><br>
-      <sub><b>ภาพที่ 12 ทดสอบ Process Pool รอบ 3</b></sub>
+    <div style="margin-bottom: 20px;">
+      <img src="images/asyncio3.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 9</b> ทดสอบ Asyncio รอบ 3</span>
     </div>
   </div>
+
+  <div style="margin-top: 100px; margin-bottom: 60px;">
+    <h3 style="border-bottom: 2px solid #777; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">
+      &nbsp;&nbsp; Process Pool &nbsp;&nbsp;
+    </h3>
+    <div style="margin-bottom: 40px;">
+      <img src="images/process1.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 10</b> ทดสอบ Process Pool รอบ 1</span>
+    </div>
+    <div style="margin-bottom: 40px;">
+      <img src="images/process2.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 11</b> ทดสอบ Process Pool รอบ 2</span>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <img src="images/process3.png" width="750" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"><br><br>
+      <span style="color: #aaa; font-size: 14px;"><b>ภาพที่ 12</b> ทดสอบ Process Pool รอบ 3</span>
+    </div>
+  </div>
+
 </div>
 
 * 🔍 **วิเคราะห์ผลลัพธ์**
     * **Sequential (แบบปกติ):** จากการทดสอบ 3 รอบ ใช้เวลา `4.38, 4.48 และ 4.45 วินาที` (เฉลี่ย ~4.44 วินาที) เป็นการทำงานแบบเรียงลำดับคิว ต้องรอให้ดึงข้อมูลเมืองแรกเสร็จสมบูรณ์ก่อนจึงจะไปดึงเมืองถัดไป เวลารวมจึงเท่ากับผลรวมของเวลาที่ใช้ดึงแต่ละเมืองรวมกัน
+
     * **Threading:** จากการทดสอบ 3 รอบ ใช้เวลา `0.90, 0.93 และ 0.93 วินาที` (เฉลี่ย ~0.92 วินาที) ทำเวลาได้<b>ดีที่สุด</b>ในการทดสอบนี้ เพราะสามารถส่งคำขอข้อมูลของทั้ง 5 เมืองออกไปได้พร้อมๆ กัน เวลาที่ใช้รวมจึงใกล้เคียงกับเวลาของเมืองที่โหลดนานที่สุดเพียงเมืองเดียว เร็วกว่าแบบปกติเกือบ 5 เท่า
+    
     * **Asyncio:** จากการทดสอบ 3 รอบ ใช้เวลา `1.04, 1.03 และ 1.09 วินาที` (เฉลี่ย ~1.05 วินาที) ทำเวลาได้ดีใกล้เคียงกับ Threading โดยอาศัยเทคนิค Event Loop สลับการทำงานใน Thread เดียว ทรัพยากรเครื่องที่ใช้จะน้อยกว่า แต่ในการรันครั้งนี้อาจมี Overhead ของไลบรารีหรือจังหวะเครือข่ายทำให้ช้ากว่า Threading เล็กน้อย
+
     * **Process Pool:** จากการทดสอบ 3 รอบ ใช้เวลา `1.28, 1.36 และ 1.30 วินาที` (เฉลี่ย ~1.31 วินาที) ใช้เวลามากกว่า Threading และ Asyncio เล็กน้อย เพราะมีเวลาสูญเสีย (Overhead) ไปกับการสร้าง Process ใหม่ขึ้นมาแยกกันอย่างอิสระ ถือเป็นการพิสูจน์ว่า Process Pool ไม่เหมาะกับงานดึงข้อมูลผ่านเน็ต แต่เหมาะกับงานคำนวณตัวเลขหนักๆ (CPU Bound) มากกว่า
 
 ## 🤔 ทำไมถึงเลือกทำเรื่องนี้?
