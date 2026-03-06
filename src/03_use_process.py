@@ -19,3 +19,15 @@ def fetch_weather_process(city):
     temp = data["current_weather"]["temperature"]
     local_time = data["current_weather"]["time"].replace("T", " ")
     print(f"[Process] {city['name']:<10} อุณหภูมิ: {temp}°C (เวลา: {local_time}) | ดึงเสร็จใน: {fetch_time:.4f} วินาที")
+
+def main():
+    print("เริ่มดึงข้อมูลด้วย Process Pool...")
+    start_time = time.time()
+    
+    with ProcessPoolExecutor() as executor:
+        executor.map(fetch_weather_process, CITIES)
+        
+    print(f"ใช้เวลาทั้งหมด: {time.time() - start_time:.4f} วินาที")
+
+if __name__ == "__main__":
+    main()
