@@ -12,14 +12,23 @@ CITIES = [
 ]
 
 def fetch_weather(city):
-    # ฟังก์ชันดึงข้อมูลสภาพอากาศ 1 เมือง
-    url = f"https://api.open-meteo.com/v1/forecast?latitude={city['lat']}&longitude={city['lon']}&current_weather=true"
+    """ฟังก์ชันดึงข้อมูลสภาพอากาศ 1 เมือง"""
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={city['lat']}&longitude={city['lon']}&current_weather=true&timezone=auto"
+    
+    # เริ่มจับเวลาเฉพาะของเมืองนี้
+    start_req = time.time() 
     
     response = requests.get(url)
     data = response.json()
     
+    # จบจับเวลา
+    end_req = time.time()
+    fetch_time = end_req - start_req
+    
     temp = data["current_weather"]["temperature"]
-    print(f"[Thread] {city['name']} อุณหภูมิ: {temp}°C")
+    local_time = data["current_weather"]["time"].replace("T", " ") 
+    
+    print(f"[Thread] {city['name']:<10} อุณหภูมิ: {temp}°C (เวลา: {local_time}) | ดึงข้อมูลเสร็จใน: {fetch_time:.4f} วินาที")
 
 def main():
     print("เริ่มดึงข้อมูลด้วย Threading...")
