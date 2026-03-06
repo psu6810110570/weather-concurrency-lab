@@ -12,9 +12,3 @@ venv/
 .vscode/
 .idea/
 .DS_Store
-
-# Images and Media (ตามโจทย์อาจารย์)
-images/
-*.png
-*.jpg
-*.jpeg
